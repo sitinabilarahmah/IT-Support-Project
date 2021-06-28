@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Verify";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link href="~/adm/plugins/toastr/toastr.min.css" rel="stylesheet" />
+<img class="mb-4" src="~/adm/img/bootstrap-logo.svg" alt="" width="72" height="57">
+<h1 class="h3 mb-3 fw-normal">Verification</h1>
+<label for="Email" class="visually-hidden">Email Verification</label>
+<input type="email" id="Email" class="form-control" placeholder="Email Verification">
+<label for="verifyId" class="visually-hidden">Verification Code</label>
+<input type="password" id="verifyId" class="form-control" placeholder="Verification Code">
+<button class="w-100 btn btn-lg btn-primary" type="submit" id="verify" onclick="Verify()">Verify</button>
+
+<p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+
+@section scriptLogin{
+    <script src="~/js/account.js"></script>
+    <script src="~/adm/plugins/toastr/toastr.min.js"></script>
+}
+
